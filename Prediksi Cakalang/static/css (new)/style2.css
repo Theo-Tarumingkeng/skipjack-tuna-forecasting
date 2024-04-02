@@ -1,0 +1,52 @@
+    /* style.css */
+
+    body {
+        text-align: center;
+    }
+
+    /* Gaya untuk meratakan elemen formulir */
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px; /* Sesuaikan lebar formulir sesuai kebutuhan */
+        margin: auto; /* Untuk membuat formulir berada di tengah halaman */
+    }
+
+    /* Gaya untuk menyatukan label dan input */
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px; /* Jarak antar form group */
+    }
+
+    /* Gaya untuk meratakan input dan label di dalam form group */
+    label, input {
+        width: 48%; /* Atur lebar label dan input */
+    }
+
+    label {
+        text-align: right;
+    }
+
+    /* Gaya untuk center placeholder */
+    .input::placeholder {
+        text-align: center;
+    }
+
+    /* Tombol prediksi */
+    .button {
+        text-align: center;
+    }
+    .predict_button {
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* Tulisan hasil prediksi */
+    .prediction_result {
+        font-size: 20px;
+        font-weight: bold;
+    }

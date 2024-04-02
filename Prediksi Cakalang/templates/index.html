@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Prediksi Cakalang</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="/static/css (new)/style2.css">
+
+  <!--
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  -->
+
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Prediksi Tangkapan Cakalang</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Prediksi Hasil Tangkapan Berdasarkan Faktor Lingkungan
+        <br>
+        </h5>
+      </div>
+
+
+    <form action='/predict' method="post" class="col s12">
+        <div class="form-group">
+            <br>
+          <label for="first_input"><b>Suhu Permukaan Laut (C) : </b></label>
+          <input placeholder="Contoh : 29.3978575" name="variabel_input" id="first_input" type="text" class="input" size="30" required="required">
+        </div>
+
+        <div class="form-group">
+            <br>
+          <label for="second_input"><b>Kadar Klorofil (mg/m<sup>3</sup>) : </b></label>
+          <input placeholder="Contoh : 0.169864166" name="variabel_input" id="second_input" type="text" class="input" size="30" required="required">
+        </div>
+
+        <div class="form-group">
+            <br>
+          <label for="third_input"><b>Arus Timur (m/s) : </b></label>
+          <input placeholder="Contoh : -0.060862628" name="variabel_input" id="third_input" type="text" class="input" size="30" required="required">
+        </div>
+
+        <div class="form-group">
+            <br>
+          <label for="fourth_input"><b>Arus Utara (m/s) : </b></label>
+          <input placeholder="Contoh : 0.132886309" name="variabel_input" id="fourth_input" type="text" class="input" size="30" required="required">
+        </div>
+
+        <div class="form-group">
+            <br>
+          <label for="fifth_input"><b>Angin Timur (m/s) : </b></label>
+          <input placeholder="Contoh : 3.789170929" name="variabel_input" id="fifth_input" type="text" class="input" size="30" required="required">
+        </div>
+
+        <div class="form-group">
+            <br>
+          <label for="sixth_input"><b>Angin Utara (m/s) : </b></label>
+          <input placeholder="Contoh : -1.191708581" name="variabel_input" id="sixth_input" type="text" class="input" size="30" required="required">
+        </div>
+
+        <div class="form-group">
+            <br>
+          <label for="seventh_input"><b>Besaran Kecepatan Angin (m/s) : </b></label>
+          <input placeholder="Contoh : 4.980304976" name="variabel_input" id="seventh_input" type="text" class="input" size="30" required="required">
+        </div>
+
+        <div class="form-group">
+            <br>
+          <label for="eighth_input"><b>Besaran Kecepatan Arus (m/s) : </b></label>
+          <input placeholder="Contoh : 0.331138209" name="variabel_input" id="eighth_input" type="text" class="input" size="30" required="required">
+        </div>
+
+    <div class="button">
+        <br><br><button type="submit" class="predict_button">Prediksi</button>
+    </div>
+
+    </form>
+    <div class="prediction_result">
+      <br><br><br>{{ prediction_text }}<br>
+    </div>
+
+    <!--
+    <div class="prediction_result">
+        <br><br><br>
+        <span class="linreg_text">{{ linreg_text }}</span> kg untuk Regresi Linear
+        <br>
+        <span class="rnn-text">{{ rnn_text }}</span> kg untuk RNN
+        <br>
+    </div>
+    -->
+
+    </div>
+  </div>
+
+
+    <br><br>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
