@@ -33,10 +33,10 @@ The proportion used for train & test data division is 40:60, means the amount of
 ## Prediction results
 This is the visualization of prediction results from the two models compared to the test data
 <p align="center">
-  <img src="pics/mmu2/b0_loss.png" width="430" alt="accessibility text">
-  <img src="pics/mmu2/b0_acc.png" width="430" alt="accessibility text">
+  <img src="Prediksi Cakalang/figures/hasil prediksi LINREG.png" width="500" alt="accessibility text">
+  <img src="Prediksi Cakalang/figures/hasil prediksi RNN.png" width="500" alt="accessibility text">
   <br>
-  <em>Loss and Accuracy curve of EfficientNet-b0 on the MMU2 dataset</em>
+  <em>Prediction results from Linear Regression and RNN models</em>
 </p>
 
 
