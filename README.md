@@ -7,7 +7,7 @@ The dataset used in this project is a merged data of daily catches of Skipjack T
 
 The environmental variables contained in the dataset are:   
 1. **Sea Surface Temperatures** (m/s)   
-2. **Chlorophyll Levels** (mg/m^(3)) 
+2. **Chlorophyll Levels** (mg/m<sup>3</sup>) 
 3. **Northward & Eastward Wind Velocities** (m/s) 
 4. **Northward & Eastward Seawater Velocities** (m/s)
 5. **Wind & Seawater Magnitude** without considering direction (m/s)
