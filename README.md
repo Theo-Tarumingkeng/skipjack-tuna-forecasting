@@ -12,15 +12,15 @@ Frameworks & Libraries used are as follows:
 The dataset used in this project is a merged data of daily catches of Skipjack Tuna with daily measurements of environmental variables in Sulawesi Sea from 2018 to 2022 (5 years). The amount of data is 1770 rows.
 
 The environmental variables contained in the dataset are:   
-1. **Sea Surface Temperatures** (m/s)   
-2. **Chlorophyll Levels** (mg/m<sup>3</sup>) 
-3. **Northward & Eastward Wind Velocities** (m/s) 
-4. **Northward & Eastward Seawater Velocities** (m/s)
-5. **Wind & Seawater Magnitude** without considering direction (m/s)
-6. **Wind & Seawater Direction**
-7. **Fishing season**   
+1. **Sea Surface Temperatures** (m/s) [NUMERIC]   
+2. **Chlorophyll Levels** (mg/m<sup>3</sup>) [NUMERIC] 
+3. **Northward & Eastward Wind Velocities** (m/s) [NUMERIC] 
+4. **Northward & Eastward Seawater Velocities** (m/s) [NUMERIC]
+5. **Wind & Seawater Magnitude** without considering direction (m/s) [NUMERIC]
+6. **Wind & Seawater Direction** [CATEGORICAL]
+7. **Fishing season** [CATEGORICAL]   
 
-### NOTE : **In this project, I only use the numerical variables, hence the categorical variabel ignored**
+### NOTE : **In this project, I only used the numeric variables, hence the categorical variabel ignored**
 
 You can see the full dataset [HERE](https://drive.google.com/file/d/1wMW3ljotmVUdqro7FFo9lgt8AQp015mC/view?usp=sharing) (the dataset is in CSV format)
 
@@ -39,5 +39,18 @@ This is the visualization of prediction results from the two models compared to 
   <em>Prediction results from Linear Regression and RNN models</em>
 </p>
 
+## Model Evaluation
+And this is the performance comparison between the models using these evaluation metrics: 
+* *Coefficient of Determination* (R<sup>2</sup>)
+* *Mean Absolute Error* (MAE)
+* *Mean Squared Error* (MSE)
+* *Root Mean Squared Error* (RMSE)
+
+|     *Metrics*     | *Linear Regression* | *Recurrent Neural Network* |
+|-------------------|---------------------|----------------------------|
+|   R<sup>2</sup>   |  -0.0048899335214   |      -0.0055417886416      |
+|       *MAE*       |      6805.790       |          6216.985          |
+|       *MSE*       |     76330724.1      |         76380240.0         |
+|       *RMSE*      |      8736.746       |          8739.579          |
 
 
