@@ -42,9 +42,9 @@ This is the visualization of prediction results from the two models compared to 
 ## Model Evaluation
 And this is the performance comparison between the models using these evaluation metrics: 
 * *Coefficient of Determination* (R<sup>2</sup>)
-* *Mean Absolute Error* (MAE)
-* *Mean Squared Error* (MSE)
-* *Root Mean Squared Error* (RMSE)
+* *Mean Absolute Error* (MAE) *in kilogram
+* *Mean Squared Error* (MSE) *in kilogram
+* *Root Mean Squared Error* (RMSE) *in kilogram
 
 |     *Metrics*     | *Linear Regression* | *Recurrent Neural Network* |
 |-------------------|---------------------|----------------------------|
